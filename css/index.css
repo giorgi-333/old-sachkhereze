@@ -1,0 +1,238 @@
+*{
+	margin:0px;
+}
+ 
+.body{
+	width: 90%;
+	margin: auto;
+	margin-top: 1.5em;
+}
+  /*დაიწყო მენიუ */
+header a {
+    text-decoration: none;
+}
+.menu li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+@font-face {
+  font-family: 'Carter One';
+   src: url(../fonts/sa.ttf);
+}
+.logo{
+	font-weight: bold;
+	text-decoration: none;
+    font-family: 'Carter One', cursive;
+    color:green;
+	width: auto;
+    height: 100%;
+    float: left;
+    font-size: 40px;
+    margin: 10px 0 0 1%;
+}
+.logo::first-letter{
+	font-size: 50px; 
+	color: #ffa500;
+}
+@media(max-width: 557px){
+	.logo{
+ /*font-size: 30px;*/
+ margin: 0px 0 0 2%;
+	}
+}
+ 
+.menu {
+    /*width: 60%;*/
+    margin-right: 1%;
+    height: 100%;
+    float: right;
+}
+.menu ul {
+
+   margin: 10px 0 0 0;
+    padding: 0px;
+    width: 100%;
+    height: inherit;
+    display: flex;      
+}
+.menu ul a {
+    font-size: 20px;
+    /*width: 15px;*/
+    padding-right: 20px;
+    height: inherit;
+    color: #222;
+    display: inline-block;
+}
+.menu a:hover:not(.active){
+transition:.3s;
+color: red;
+}
+.active{
+	font-weight: bold;
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+
+
+/*aqedan menu responsive*/
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+    }
+    .menu ul a {
+    	/*font-size: 23px;*/
+        float: left;
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        padding: 0px 0px 0px 5%;
+    }
+    .menu-icon {
+        width: 70px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ .menu {
+        max-height: 350px;
+    }
+    .menu-icon i {
+       line-height: 60px;
+        font-size: 1.7em;
+    }
+}  /*media */ 
+
+
+     /* დამთავრდა მენიუ */
+
+   /* სოციუალური ქსელების დასაწყისი */
+.social{
+position: fixed;
+top:25%;
+right:0;
+z-index: 999;
+}
+.soc{
+	border-top-left-radius: 15px;
+	width: 50px;
+	height: 50px;
+	background-image: url('../images/facebook.png');
+	background-size: 50px 50px;
+}
+.soc1{
+	width: 50px;
+	height: 50px;
+	background-image: url('../images/youtube.png');
+	background-size: 50px 50px;
+}
+.soc2{
+	width: 50px;
+	height: 50px;
+	background-image: url('../images/twiter.png');
+	background-size: 50px 50px;
+	border-bottom-left-radius: 15px;
+}
+
+footer{
+   
+	font-size: 20px;
+	clear: both;
+	color: #808080;
+	background-color: #404040;
+	padding: 10px 0px;
+	text-align: center;
+}
+@media(max-width: 557px){
+	footer{
+
+		font-size: 17px;
+	}
+ .social{
+ 	display: none;
+ }
+}
+
+/*იწყება counter1*/
+ .counter1{
+ 	clear: left;
+	/*position: absolute;*/
+	bottom: 10px;
+	margin-left:36%;
+}
+@media(max-width: 557px){
+.counter1{
+	margin-left:-4%;
+}
+
+} /*@media */
+
+.counter1 ul{
+  list-style: none;
+}
+.counter1 ul li{
+	background-color: #80bfff;
+	border-radius: 50%;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 47px;
+	font-size: 20px;
+	height: 47px;
+	width: 47px;
+	/*border:1px solid #ccc;*/
+	display: inline-block;
+}
+@media(max-width: 557px){
+	.counter1 ul li{
+font-size: 15px;
+height: 35px;
+width: 35px;
+line-height: 35px;
+	}
+}
+.counter1 a{
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+.cno1{
+color: #fff;
+cursor: not-allowed;
+}
+.counter1 a:hover:not(.cno1){
+	color: #00264d;
+}
+.cactive1{
+	color: #000;
+	background-color: #333;
+} 
+
+  /*CActive1-ის დასასრული */
+ footer::selection{
+ 	background-color:#000;
+ }
+
+@media(max-width: 340px){
+.counter1{
+	margin-left:-14%;
+}

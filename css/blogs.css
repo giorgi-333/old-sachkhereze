@@ -1,0 +1,148 @@
+.nav{
+border-radius: 4px;
+padding: 8px 15px;
+background-color:#f5f5f5;
+}
+.nav a{
+	text-decoration: none;
+	color: #000;
+}
+.nav a:hover{
+	text-decoration: underline;
+transition: 0.4s;
+	color:#b32400;
+}
+
+
+.coll1{
+	box-sizing: border-box;
+	padding-right: 1em;
+	float: left;
+	width: 75%;
+	margin-bottom: 20px;
+}
+.body h1{ /*blog header*/
+/*margin-bottom: 0.6em;*/
+/*text-align: center;*/
+width: 170px;
+/*margin-left: 20px;*/
+border-bottom: 4px solid #1facff;
+border-radius: 4px;
+}
+
+@media(max-width: 557px) {
+   .coll1{
+   	padding-right: 0px;
+   	width: 100%;
+   }
+
+ .body h1{ /*blog header*/
+margin: auto;
+border: 0px;
+}
+
+}
+
+
+
+.body h3{
+	margin-top: 0.6em;
+	color: #525252;
+}
+
+.author{
+	color:#999999;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.author a{
+	color: #999999;
+}
+.author a:hover{
+	color: #cc5200;
+}
+.author span{
+	color:#ff7105;
+}
+.coll1 img{
+	width: 100%;
+	height: auto;
+}
+.bloginfo{
+	color: #999;
+	line-height: 1.5em;
+	margin: 0.4em 0em 0.6em;
+}
+@media(max-width: 557px){
+	.bloghide{
+		display: none;
+	}
+}
+
+.read{
+	padding: 12px 10px;
+	background-color: green;
+	text-decoration: none;
+	color:#fff;
+	border-radius: 5px;
+	display: inline-block;
+	opacity: 0.8;
+	margin-bottom: 1em;
+}
+.read:hover{
+	opacity: 1.0;
+}
+
+/* aqamde coll1 */
+
+.coll2{
+	margin-bottom: 2.3em;
+	box-sizing: border-box;
+	padding-left: 1em;
+	margin-top: 2.3em;
+	float: right;
+	width: 25%;
+}
+.coll2 h3{
+	font-size: 1.5em;
+	color:green;
+	margin-bottom: .5em;
+}
+.coll2 ul{
+	list-style: none;
+	margin: 0px;
+	padding:0px;
+}
+.coll2 ul li{
+	/*padding-bottom: 8px;*/
+	border-bottom:1px dashed #989898;
+	width: 60%;
+	padding: 10px 5px;
+}
+.coll2 ul li a{
+	font-size: 20px;
+	color: #777777;
+	text-decoration: none;
+	
+}
+.coll2 ul li a:hover{
+	color: #cca300;
+}
+@media(max-width: 557px){
+	.coll2{
+		float: left;
+		width: 100%;
+	}
+.coll2 ul li{
+	width: auto;
+	
+}
+} /* mediaa */
+
+.coll2 span{
+	width: 18px;
+    height: 18px;
+    background: url(../images/arw.png) no-repeat 0px 6px;
+    display: block;
+    float: left;
+}
